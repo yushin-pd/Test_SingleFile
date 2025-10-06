@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>サンプルサイト　ローカルメニュー</title>
+	<!--↓CSSの読み込み(画面表示用)。cssフォルダ内なので「css/style.css」と指定-->
+	<link href="common/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<style type="text/css">
+	<!--
+	body {	
+		height: 100%;
+		background: #AA9;							/*--FF対策。高さを指定する必要あり--*/
+	}
+	-->
+	</style>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+
+</head>
+
+<body>
+<!--↓この内容がインラインフレームとしてmenu部分に呼び出される-->
+<!--↓menuは同一ディレクトリ内で同じものを使うのが望ましい-->
+
+<!--↓基本的にmenuは単一の階層から呼び出すようにすると、相対パスで記述できる。-->
+<!--↓★そうすれば、ローカルでリンクが使えるので便利。(リンク先をFTPしておく必要がない)-->
+
+<!--↓なお、target="_top"はリンク先を画面全体に表示させるための指定。-->
+
+<div align="left"><a href="問合せ一覧.html" target="_blank">
+  <img src="images/info.gif" alt="お問合せ一覧" width="200" height="60" border="0"></a>
+</div>
+
+<div id="menu">
+  <div id="office">&equiv;経理関係&equiv;</div>
+
+  <ul>
+
+    <li class="list-tit">
+      <a href="keiri_siryou.html" target="_parent">
+        <span class="list-tit">経理業務・資料関係</span>
+      </a>
+    </li>
+    <li><a href="keiri_siryou.html#01" target="_parent">規則・業務手引書</a></li>
+    <li><a href="keiri_siryou.html#03" target="_parent">経理ERP関連</a></li>
+    <li><a href="keiri_siryou.html#04" target="_parent">収益認識基準</a></li>
+    <li><a href="keiri_siryou.html#05" target="_parent">収支管理委員会</a></li>
+    <li><a href="keiri_siryou.html#06" target="_parent">予算資料</a></li>
+    <li><a href="keiri_siryou.html#07" target="_parent">決算データ</a></li>
+    <li><a href="keiri_siryou.html#08" target="_parent">書類ダウンロード</a></li>
+    <li><a href="keiri_siryou.html#10" target="_parent">スケジュール</a></li>
+
+  </ul>
+</div>
+
+</body>
+</html>
